@@ -1,9 +1,27 @@
-# React + Vite
+# AdminFireCrypto - Simulador de Sistema Administrativo de Criptomoedas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bem-vindo ao AdminFireCrypto.
 
-Currently, two official plugins are available:
+## Descrição
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# AdminFireCrypto
+O AdminFireCrypto é uma aplicação que simula uma aplicação administrativa no ramo de criptomoedas
+
+## Como Clonar o Repositório
+
+Para começar a utilizar o AdminFireCrypto, siga estas etapas simples para clonar este repositório e instalar as dependências necessárias com o `npm`:
+
+```bash
+# Clone o repositório para o seu ambiente local
+git clone https://github.com/JacoGois/AdminFireCrypto.git
+
+# Navegue até o diretório do projeto
+cd AdminFireCrypto
+
+# Instale as dependências usando npm
+npm install
+
+# Uso
+
+Para iniciar o AdminFireCrypto, você pode usar o seguinte comando:
+
+npm start
