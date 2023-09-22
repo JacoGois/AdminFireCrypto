@@ -6,10 +6,11 @@ import { PercentAsText } from "../../../components/PercentAsText"
 import { BiSolidDownArrow, BiSolidUpArrow } from "react-icons/bi"
 import classNames from "classnames"
 import { cardItemVariant } from "../../../animations"
+import { Fragment } from "react"
 
 export const CryptoCard = ({ loadingCoinRanking, coin }) => {
   return (
-    <BoxRoot variants={cardItemVariant} className="flex items-center gap-2 p-3 h-[75px]">
+    <BoxRoot variants={cardItemVariant} className="flex items-center justify-between gap-2 p-3 h-[75px]">
       {loadingCoinRanking ? 
       (
         <>
@@ -22,11 +23,11 @@ export const CryptoCard = ({ loadingCoinRanking, coin }) => {
       ) : (
         <>
           <img src={coin?.iconUrl} width={36} />
-          <div>
+          <div className="md:hidden lg:block">
             <p className="font-bold text-base whitespace-nowrap">{coin?.name}</p>  
             <p className="font-bold text-base -mt-[2px] text-gray-400">{coin?.symbol}</p>  
-          </div>            
-          <Sparklines data={coin?.sparkline}>
+          </div>  
+          <Sparklines data={coin?.sparkline}style={{ maxHeight: '65px'}} >
             <SparklinesLine color={coin?.change >= 0 ? 'green' : 'red'} />
           </Sparklines>
           <div>

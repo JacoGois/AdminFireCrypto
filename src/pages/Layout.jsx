@@ -7,7 +7,7 @@ export const Layout = ({ children }) => {
   const { loadingCotation } = useBalance()
 
   return (
-    <main className="flex md:text-sm min-h-screen h-full text-base no-srollbar bg-background font-Montserrat no-scrollbar">
+    <main className="flex md:text-sm xl:text-base min-h-screen h-full text-base no-srollbar bg-background font-Montserrat no-scrollbar">
       <Sidebar />
       <div className="w-full">
         <Header />

@@ -61,8 +61,8 @@ export const ModalAddCard = ({ isOpen, onClose, setValues, val }) => {
           />
         </div>
         <form className="flex flex-col" onSubmit={handleSubmit}>
-          <TextField errorMessage={errors.name} label='Name' onFocus={handleFocus} type="text" name='name' placeholder='Ex.: Jonh J S Witt' value={values.name} onChange={handleChange} />
           <FormatField errorMessage={errors.number} label='Number' mask="" format='###################' onFocus={handleFocus} type="text" name='number' placeholder='Ex.: 6097862323123121' value={values.number} onChange={handleChange} />
+          <TextField errorMessage={errors.name} label='Name' onFocus={handleFocus} type="text" name='name' placeholder='Ex.: Jonh J S Witt' value={values.name} onChange={handleChange} />
           <div className="flex gap-2">
           <FormatField className='w-full' errorMessage={errors.expiry} label='Expiry' format='##/##' onFocus={handleFocus} type="text" name='expiry' placeholder='Ex.:  12/27' value={values.expiry} onChange={handleChange} />
           <FormatField className='w-full' errorMessage={errors.cvc} label='CVC' format='###' onFocus={handleFocus} type="text" name='cvc' placeholder='Ex.: 123' value={values.cvc} onChange={handleChange}/>
