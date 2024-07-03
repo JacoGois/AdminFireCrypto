@@ -1,7 +1,7 @@
 export const animationClick = {
   click: { 
-    scale: 0.9,
-    transition: { duration: 0.3 },
+    scale: 0.8,
+    transition: { duration: 0.4 },
   }
 }
 
